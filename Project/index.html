@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="scripts/index.js"></script> 
+  
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <div class="header-image">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="header-content">
+                <h1>NSP MOVIES</h1>
+                <h3>Dive into the World of Endless Entertainment</h3>
+            </div>
+        </div>
+
+    </header>
+       
+       <nav>
+        <ul id="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li>
+                <div class="nav-dropdown">
+                    <a href="#"><i class="fas fa-film"></i> Browse Movies <i class="fas fa-caret-down"></i></a>
+                    <div class="nav-dropdown-content">
+                        <a href="action.html">Action</a>
+                        <a href="comedy.html">Comedy</a>
+                        <a href="drama.html">Drama</a>
+                        <a href="horror.html">Horror</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="nav-dropdown">
+                    <a href="#" class="dropbtn"><i class="fas fa-tachometer-alt"></i> Dashboard<i
+                            class="fas fa-caret-down"></i></a>
+                    <div class="nav-dropdown-content">
+                        <a href="profile.html" id="profile-link" id="username-display">  Profile</a>
+                        
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="nav-dropdown">
+                    <a href="#" class="dropbtn"><i class="fas fa-list"></i> Watchlist</a>
+                    <div class="nav-dropdown-content">
+
+                    </div>
+                </div>
+            </li>
+
+            <li id="login-signup"><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login/Signup</a></li>
+
+           
+
+        </ul>
+        <form action="#" method="GET" class="search-form">
+            <input type="text" name="search" placeholder="Search movies, series....">
+            <button type="submit">Search</button>
+        </form>
+
+    </nav>
+
+
+    <main>
+        <section id="information">
+            <h2><i class="fas fa-film"></i> All Movies</h2>
+            <div class="no-results" style="display: none;">No results found</div>
+            <div class="movie-grid">
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/movie2.jpg" alt="Movie 2">
+                        <p>A QUITE PLACE: DAY ONE</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                        </div>
+                    </div>
+
+                    <div class="movie-dropdown">
+
+                        <div class="movie-dropdown-content">
+
+                            <ul>
+                                <li><strong>Director:</strong> Michael Sarnoski </li>
+                                <li><strong>Writer:</strong> Michael Sarnoski, John Krasinski, Bryan Woods </li>
+                                <li><strong>Cast:</strong> Joseph Quinn, Lupita Nyong'o, Alex Wolff, Djimon Hounsou,
+                                    Thea
+                                    Butler
+                                </li>
+                                <li><strong>Genre:</strong> Drama, Horror, Sci-Fi</li>
+                                <li><strong>Duration:</strong> 1h 40m</li>
+                                <li><strong>Synopsis:</strong> Plot under wraps.</li>
+                                <li><strong>IMDB Rating:</strong> 6.2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/Oppenheimer.jpg" alt="Movie 1">
+                        <p>Oppenheimer</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> Christopher Nolan</li>
+                                <li><strong>Writer:</strong> Christopher Nolan</li>
+                                <li><strong>Cast:</strong> Cillian Murphy, Emily Blunt, Robert Downey Jr., Matt Damon</li>
+                                <li><strong>Genre:</strong> Biography, Drama, History</li>
+                                <li><strong>Duration:</strong> 3h</li>
+                                <li><strong>Synopsis:</strong> The story of J. Robert Oppenheimer, the scientist behind the Manhattan Project and the creation of the atomic bomb.</li>
+                                <li><strong>IMDB Rating:</strong> 8.7</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/Guardians_of_the_Galaxy.jpg" alt="Movie 6">
+                        <p>Guardians of the Galaxy Vol. 3</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> James Gunn</li>
+                                <li><strong>Writer:</strong> James Gunn</li>
+                                <li><strong>Cast:</strong> Chris Pratt, Zoe Saldana, Dave Bautista, Karen Gillan</li>
+                                <li><strong>Genre:</strong> Action, Adventure, Comedy</li>
+                                <li><strong>Duration:</strong> 2h 30m</li>
+                                <li><strong>Synopsis:</strong> The Guardians embark on a mission to protect one of their own, a mission that could lead to the end of their team as they know it.</li>
+                                <li><strong>IMDB Rating:</strong> 8.2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/Dune_Part_Two.jpeg" alt="Movie 7">
+                        <p>Dune: Part Two</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> Denis Villeneuve</li>
+                                <li><strong>Writer:</strong> Denis Villeneuve, Jon Spaihts, Eric Roth</li>
+                                <li><strong>Cast:</strong> Timothée Chalamet, Zendaya, Rebecca Ferguson, Oscar Isaac</li>
+                                <li><strong>Genre:</strong> Adventure, Drama, Sci-Fi</li>
+                                <li><strong>Duration:</strong> 2h 35m</li>
+                                <li><strong>Synopsis:</strong> Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.</li>
+                                <li><strong>IMDB Rating:</strong> 8.3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/Ullozhukku.jpg" alt="Ullozhukku">
+                        <p>Ullozhukku</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class=" material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> Abrid Shine</li>
+                                <li><strong>Writer:</strong> Abrid Shine</li>
+                                <li><strong>Cast:</strong> Asif Ali, Antony Varghese, Chemban Vinod Jose, Aparna Balamurali</li>
+                                <li><strong>Genre:</strong> Drama, Thriller</li>
+                                <li><strong>Duration:</strong> 2h 20m</li>
+                                <li><strong>Synopsis:</strong> *Ullozhukku* explores the turbulent lives of a group of friends caught in a web of deceit, betrayal, and redemption.</li>
+                                <li><strong>IMDB Rating:</strong> 7.8</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/King-of-Kotha.jpg" alt="Movie 12">
+                        <p>King of Kotha</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> Abhilash Joshiy</li>
+                                <li><strong>Writer:</strong> Abhilash N. Chandran</li>
+                                <li><strong>Cast:</strong> Dulquer Salmaan, Aishwarya Lekshmi, Prasanna, Gokul Suresh</li>
+                                <li><strong>Genre:</strong> Action, Crime, Drama</li>
+                                <li><strong>Duration:</strong> 2h 45m</li>
+                                <li><strong>Synopsis:</strong> A crime drama set in a fictional town of Kotha, focusing on the power struggles and relationships within the local crime world.</li>
+                                <li><strong>IMDB Rating:</strong> 7.0</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                                                                        
+
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/Barbie.jpg" alt="Movie 2">
+                        <p>Barbie</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> Greta Gerwig</li>
+                                <li><strong>Writer:</strong> Greta Gerwig, Noah Baumbach</li>
+                                <li><strong>Cast:</strong> Margot Robbie, Ryan Gosling, America Ferrera, Kate McKinnon</li>
+                                <li><strong>Genre:</strong> Adventure, Comedy, Fantasy</li>
+                                <li><strong>Duration:</strong> 1h 54m</li>
+                                <li><strong>Synopsis:</strong> Barbie and Ken set off on an adventure of self-discovery after realizing their world is not what it seems.</li>
+                                <li><strong>IMDB Rating:</strong> 7.2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/Mission-_Impossible.jpg" alt="Movie 3">
+                        <p>Mission: Impossible - Dead Reckoning Part One</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> Christopher McQuarrie</li>
+                                <li><strong>Writer:</strong> Christopher McQuarrie, Erik Jendresen</li>
+                                <li><strong>Cast:</strong> Tom Cruise, Hayley Atwell, Ving Rhames, Simon Pegg</li>
+                                <li><strong>Genre:</strong> Action, Adventure, Thriller</li>
+                                <li><strong>Duration:</strong> 2h 43m</li>
+                                <li><strong>Synopsis:</strong> Ethan Hunt and his team embark on their most dangerous mission yet: to track down a terrifying new weapon that threatens all of humanity.</li>
+                                <li><strong>IMDB Rating:</strong> 8.0</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/Meg_2-_The_Trench.jpg" alt="Movie 4">
+                        <p>The Meg 2: The Trench</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> Ben Wheatley</li>
+                                <li><strong>Writer:</strong> Jon Hoeber, Erich Hoeber, Dean Georgaris</li>
+                                <li><strong>Cast:</strong> Jason Statham, Jing Wu, Sienna Guillory, Cliff Curtis</li>
+                                <li><strong>Genre:</strong> Action, Adventure, Horror</li>
+                                <li><strong>Duration:</strong> 1h 56m</li>
+                                <li><strong>Synopsis:</strong> A research team encounters multiple threats while exploring the depths of the ocean, including a massive Megalodon shark.</li>
+                                <li><strong>IMDB Rating:</strong> 5.7</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/Indiana_Jones.jpg" alt="Movie 5">
+                        <p>Indiana Jones and the Dial of Destiny</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> James Mangold</li>
+                                <li><strong>Writer:</strong> Jez Butterworth, John-Henry Butterworth, James Mangold</li>
+                                <li><strong>Cast:</strong> Harrison Ford, Phoebe Waller-Bridge, Antonio Banderas, Mads Mikkelsen</li>
+                                <li><strong>Genre:</strong> Action, Adventure</li>
+                                <li><strong>Duration:</strong> 2h 34m</li>
+                                <li><strong>Synopsis:</strong> Indiana Jones teams up with his goddaughter to find a device that could change the course of history.</li>
+                                <li><strong>IMDB Rating:</strong> 6.9</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                                                                                
+
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/madmax.jpeg" alt="Furiosa: A Mad Max Saga">
+                        <p>Furiosa: A Mad Max Saga</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+
+                            <ul>
+                                <li><strong>Director:</strong> George Miller</li>
+                                <li><strong>Writer:</strong> George Miller, Nick Lathouris</li>
+                                <li><strong>Cast:</strong> Anya Taylor-Joy, Chris Hemsworth, Tom Burke</li>
+                                <li><strong>Genre:</strong> Action, Adventure, Sci-Fi</li>
+                                <li><strong>Duration:</strong> 2h 28m</li>
+                                <li><strong>Synopsis:</strong> The origin story of renegade warrior Furiosa before her
+                                    encounter and team-up with Mad Max.</li>
+                                <li><strong>IMDB Rating:</strong> 7.9</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+               
+                
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/kalki.png" alt="Movie 1">
+                        <p>KALKI-2898-AD</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+
+                        </div>
+                        <div class="stars">
+                            
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+
+                            <ul>
+                                <li><strong>Director:</strong> Nag Ashwin </li>
+                                <li><strong>Writer:</strong> Nag Ashwin </li>
+                                <li><strong>Cast:</strong> Prabhas, Amitabh Bachchan, Kamal Haasan, Deepika Padukone,
+                                    Disha
+                                    Patani, Brahmanandam</li>
+                                <li><strong>Genre:</strong> Action, Adventure, Drama</li>
+                                <li><strong>Duration:</strong> 3h </li>
+                                <li><strong>Synopsis:</strong> A modern-day avatar of Vishnu, a Hindu god, who is
+                                    believed
+                                    to
+                                    have descended to earth to protect the world from evil forces.</li>
+                                <li><strong>IMDB Rating:</strong> 7.8</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/ExorcistBeliever.jpg" alt="Movie 1">
+                        <p>The Exorcist: Believer</p>
+                        <div class="movie-buttons">
+                            <div class="info">
+                                <button><i class="material-icons">info_outline</i></button>
+                            </div>
+                            <div class="add-to-watchlist">
+                                <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> David Gordon Green</li>
+                                <li><strong>Writer:</strong> Peter Sattler, David Gordon Green</li>
+                                <li><strong>Cast:</strong> Leslie Odom Jr., Ann Dowd, Ellen Burstyn, Jennifer Nettles</li>
+                                <li><strong>Genre:</strong> Horror, Thriller</li>
+                                <li><strong>Duration:</strong> 1h 51m</li>
+                                <li><strong>Synopsis:</strong> The father of a possessed child seeks out Chris MacNeil in a desperate attempt to save her, unleashing a horror beyond belief.</li>
+                                <li><strong>IMDB Rating:</strong> 6.5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie">
+    <div class="movie-basic-info">
+        <img src="images/Barbie.jpg" alt="Movie 1">
+        <p>Barbie</p>
+        <div class="movie-buttons">
+            <div class="info">
+                <button><i class="material-icons">info_outline</i></button>
+            </div>
+            <div class="add-to-watchlist">
+                <button><i class="material-icons">playlist_add</i></button>
+            </div>
+        </div>
+        <div class="stars">
+            <i class="fa">&#xf005;</i>
+            <i class="fa">&#xf005;</i>
+            <i class="fa">&#xf005;</i>
+            <i class="fa">&#xf005;</i>
+            <i class="fa">&#xf005;</i>
+        </div>
+    </div>
+    <div class="movie-dropdown">
+        <div class="movie-dropdown-content">
+            <ul>
+                <li><strong>Director:</strong> Greta Gerwig</li>
+                <li><strong>Writer:</strong> Greta Gerwig, Noah Baumbach</li>
+                <li><strong>Cast:</strong> Margot Robbie, Ryan Gosling, America Ferrera, Kate McKinnon</li>
+                <li><strong>Genre:</strong> Comedy, Adventure, Fantasy</li>
+                <li><strong>Duration:</strong> 1h 54m</li>
+                <li><strong>Synopsis:</strong> Barbie suffers a crisis that leads her to question her world and her existence, sparking a journey of self-discovery in a world that challenges her expectations.</li>
+                <li><strong>IMDB Rating:</strong> 7.3</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/TalkToMe2022.jpg" alt="Movie 2">
+                        <p>Talk to Me</p>
+                        <div class="movie-buttons">
+                            <div class="info">
+                                <button><i class="material-icons">info_outline</i></button>
+                            </div>
+                            <div class="add-to-watchlist">
+                                <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> Danny Philippou, Michael Philippou</li>
+                                <li><strong>Writer:</strong> Danny Philippou, Bill Hinzman</li>
+                                <li><strong>Cast:</strong> Sophie Wilde, Miranda Otto, Alexandra Jensen, Joe Bird</li>
+                                <li><strong>Genre:</strong> Horror, Thriller</li>
+                                <li><strong>Duration:</strong> 1h 34m</li>
+                                <li><strong>Synopsis:</strong> A group of friends discover how to conjure spirits using an embalmed hand, but their thrill turns into a terrifying ordeal when one of them goes too far.</li>
+                                <li><strong>IMDB Rating:</strong> 7.4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/jathi ratnalu.jpg" alt="Furiosa: A Mad Max Saga">
+                        <p>Jathi Ratnalu</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+
+                            <ul>
+                                <li><strong>Director:</strong> Anudeep KV </li>
+                                <li><strong>Writer:</strong> Anudeep KV </li>
+                                <li><strong>Cast:</strong> Naveen Polishetty, Priyadarshi, Rahul Ramakrishna, Faria Abdullah </li>
+                                <li><strong>Genre:</strong> Comedy</li>
+                                <li><strong>Duration:</strong> 2h 25m</li>
+                                <li><strong>Synopsis:</strong> Three friends from a small town get caught up in a major political scandal, leading to hilarious situations. </li>
+                                <li><strong>IMDB Rating:</strong> 7.7</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+
+            <div class="socials">
+                <p>Follow us on social media:</p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 NSP MOVIE WEB | Designed by NSP Web Team
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

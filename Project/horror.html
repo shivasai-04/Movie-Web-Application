@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="scripts/index.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+            <div class="header-image">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="header-content">
+                <h1>NSP MOVIES</h1>
+                <h3>Dive into the World of Endless Entertainment</h3>
+            </div>
+        </div>
+
+    </header>
+
+    <nav>
+        <ul id="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li>
+                <div class="nav-dropdown">
+                    <a href="#"><i class="fas fa-film"></i> Browse Movies <i class="fas fa-caret-down"></i></a>
+                    <div class="nav-dropdown-content">
+                        <a href="action.html">Action</a>
+                        <a href="comedy.html">Comedy</a>
+                        <a href="drama.html">Drama</a>
+                        <a href="horror.html">Horror</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="nav-dropdown">
+                    <a href="#" class="dropbtn"><i class="fas fa-tachometer-alt"></i> Dashboard<i
+                            class="fas fa-caret-down"></i></a>
+                    <div class="nav-dropdown-content">
+                        <a href="profile.html">Profile</a>
+                        
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="nav-dropdown">
+                    <a href="#" class="dropbtn"><i class="fas fa-list"></i> Watchlist</a>
+                    <div class="nav-dropdown-content">
+
+                    </div>
+                </div>
+            </li>
+
+            <li id="login-signup"><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login/Signup</a></li>
+
+
+
+        </ul>
+        <form action="#" method="GET" class="search-form">
+            <input type="text" name="search" placeholder="Search movies, series....">
+            <button type="submit">Search</button>
+        </form>
+
+    </nav>
+
+
+    <main>
+        <section id="information">
+            <h2><i class="fas fa-film"></i> Horror Movies</h2>
+            <div class="no-results" style="display: none;">No results found</div>
+            <div class="movie-grid">
+                
+              
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/ExorcistBeliever.jpg" alt="Movie 1">
+                        <p>The Exorcist: Believer</p>
+                        <div class="movie-buttons">
+                            <div class="info">
+                                <button><i class="material-icons">info_outline</i></button>
+                            </div>
+                            <div class="add-to-watchlist">
+                                <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> David Gordon Green</li>
+                                <li><strong>Writer:</strong> Peter Sattler, David Gordon Green</li>
+                                <li><strong>Cast:</strong> Leslie Odom Jr., Ann Dowd, Ellen Burstyn, Jennifer Nettles</li>
+                                <li><strong>Genre:</strong> Horror, Thriller</li>
+                                <li><strong>Duration:</strong> 1h 51m</li>
+                                <li><strong>Synopsis:</strong> The father of a possessed child seeks out Chris MacNeil in a desperate attempt to save her, unleashing a horror beyond belief.</li>
+                                <li><strong>IMDB Rating:</strong> 6.5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/TalkToMe2022.jpg" alt="Movie 2">
+                        <p>Talk to Me</p>
+                        <div class="movie-buttons">
+                            <div class="info">
+                                <button><i class="material-icons">info_outline</i></button>
+                            </div>
+                            <div class="add-to-watchlist">
+                                <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> Danny Philippou, Michael Philippou</li>
+                                <li><strong>Writer:</strong> Danny Philippou, Bill Hinzman</li>
+                                <li><strong>Cast:</strong> Sophie Wilde, Miranda Otto, Alexandra Jensen, Joe Bird</li>
+                                <li><strong>Genre:</strong> Horror, Thriller</li>
+                                <li><strong>Duration:</strong> 1h 34m</li>
+                                <li><strong>Synopsis:</strong> A group of friends discover how to conjure spirits using an embalmed hand, but their thrill turns into a terrifying ordeal when one of them goes too far.</li>
+                                <li><strong>IMDB Rating:</strong> 7.4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/Meg_2-_The_Trench.jpg" alt="Movie 4">
+                        <p>The Meg 2: The Trench</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> Ben Wheatley</li>
+                                <li><strong>Writer:</strong> Jon Hoeber, Erich Hoeber, Dean Georgaris</li>
+                                <li><strong>Cast:</strong> Jason Statham, Jing Wu, Sienna Guillory, Cliff Curtis</li>
+                                <li><strong>Genre:</strong> Action, Adventure, Horror</li>
+                                <li><strong>Duration:</strong> 1h 56m</li>
+                                <li><strong>Synopsis:</strong> A research team encounters multiple threats while exploring the depths of the ocean, including a massive Megalodon shark.</li>
+                                <li><strong>IMDB Rating:</strong> 5.7</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/movie2.jpg" alt="Movie 2">
+                        <p>A QUITE PLACE: DAY ONE</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                        </div>
+                    </div>
+
+                    <div class="movie-dropdown">
+
+                        <div class="movie-dropdown-content">
+
+                            <ul>
+                                <li><strong>Director:</strong> Michael Sarnoski </li>
+                                <li><strong>Writer:</strong> Michael Sarnoski, John Krasinski, Bryan Woods </li>
+                                <li><strong>Cast:</strong> Joseph Quinn, Lupita Nyong'o, Alex Wolff, Djimon Hounsou,
+                                    Thea
+                                    Butler
+                                </li>
+                                <li><strong>Genre:</strong> Drama, Horror, Sci-Fi</li>
+                                <li><strong>Duration:</strong> 1h 40m</li>
+                                <li><strong>Synopsis:</strong> Plot under wraps.</li>
+                                <li><strong>IMDB Rating:</strong> 6.2</li>
+                            </ul>
+                        </div>
+                    
+
+               
+
+
+
+
+
+            </div>
+        </section>
+
+    </main>
+
+   
+
+
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+
+            <div class="socials">
+                <p>Follow us on social media:</p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 NSP MOVIE WEB | Designed by NSP Web Team
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="scripts/index.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div>
+            <div class="header-image">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="header-content">
+                <h1>NSP MOVIES</h1>
+                <h3>Dive into the World of Endless Entertainment</h3>
+            </div>
+        </div>
+
+    </header>
+
+    <nav>
+        <ul id="nav-links" >
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li>
+                <div class="nav-dropdown">
+                    <a href="#"><i class="fas fa-film"></i> Browse Movies <i class="fas fa-caret-down"></i></a>
+                    <div class="nav-dropdown-content">
+                        <a href="action.html">Action</a>
+                        <a href="comedy.html">Comedy</a>
+                        <a href="drama.html">Drama</a>
+                        <a href="horror.html">Horror</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="nav-dropdown">
+                    <a href="#" class="dropbtn"><i class="fas fa-tachometer-alt"></i> Dashboard<i
+                            class="fas fa-caret-down"></i></a>
+                    <div class="nav-dropdown-content">
+                        <a href="profile.html">Profile</a>
+                        
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="nav-dropdown">
+                    <a href="#" class="dropbtn"><i class="fas fa-list"></i> Watchlist</a>
+                    <div class="nav-dropdown-content">
+
+                    </div>
+                </div>
+            </li>
+
+            <li id="login-signup"><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login/Signup</a></li>
+
+
+
+        </ul>
+        <form action="#" method="GET" class="search-form">
+            <input type="text" name="search" placeholder="Search movies, series....">
+            <button type="submit">Search</button>
+        </form>
+
+    </nav>
+
+
+    <main>
+        <section id="information">
+            <h2><i class="fas fa-film"></i> Comedy Movies</h2>
+            <div class="no-results" style="display: none;">No results found</div>
+            <div class="movie-grid">
+                
+               
+
+              
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/Guardians_of_the_Galaxy.jpg" alt="Movie 6">
+                        <p>Guardians of the Galaxy Vol. 3</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> James Gunn</li>
+                                <li><strong>Writer:</strong> James Gunn</li>
+                                <li><strong>Cast:</strong> Chris Pratt, Zoe Saldana, Dave Bautista, Karen Gillan</li>
+                                <li><strong>Genre:</strong> Action, Adventure, Comedy</li>
+                                <li><strong>Duration:</strong> 2h 30m</li>
+                                <li><strong>Synopsis:</strong> The Guardians embark on a mission to protect one of their own, a mission that could lead to the end of their team as they know it.</li>
+                                <li><strong>IMDB Rating:</strong> 8.2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/Barbie.jpg" alt="Movie 1">
+                        <p>Barbie</p>
+                        <div class="movie-buttons">
+                            <div class="info">
+                                <button><i class="material-icons">info_outline</i></button>
+                            </div>
+                            <div class="add-to-watchlist">
+                                <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                            <i class="fa">&#xf005;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+                            <ul>
+                                <li><strong>Director:</strong> Greta Gerwig</li>
+                                <li><strong>Writer:</strong> Greta Gerwig, Noah Baumbach</li>
+                                <li><strong>Cast:</strong> Margot Robbie, Ryan Gosling, America Ferrera, Kate McKinnon</li>
+                                <li><strong>Genre:</strong> Comedy, Adventure, Fantasy</li>
+                                <li><strong>Duration:</strong> 1h 54m</li>
+                                <li><strong>Synopsis:</strong> Barbie suffers a crisis that leads her to question her world and her existence, sparking a journey of self-discovery in a world that challenges her expectations.</li>
+                                <li><strong>IMDB Rating:</strong> 7.3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie">
+                    <div class="movie-basic-info">
+                        <img src="images/jathi ratnalu.jpg" alt="Furiosa: A Mad Max Saga">
+                        <p>Jathi Ratnalu</p>
+                        <div class="movie-buttons">
+                            <div class="info"> <button><i class="material-icons">info_outline</i> </button></div>
+                            <div class="add-to-watchlist"> <button><i class="material-icons">playlist_add</i></button>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                            <i class="fa">&#xf006;</i>
+                        </div>
+                    </div>
+                    <div class="movie-dropdown">
+                        <div class="movie-dropdown-content">
+
+                            <ul>
+                                <li><strong>Director:</strong> Anudeep KV </li>
+                                <li><strong>Writer:</strong> Anudeep KV </li>
+                                <li><strong>Cast:</strong> Naveen Polishetty, Priyadarshi, Rahul Ramakrishna, Faria Abdullah </li>
+                                <li><strong>Genre:</strong> Comedy</li>
+                                <li><strong>Duration:</strong> 2h 25m</li>
+                                <li><strong>Synopsis:</strong> Three friends from a small town get caught up in a major political scandal, leading to hilarious situations. </li>
+                                <li><strong>IMDB Rating:</strong> 7.7</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+             </div>
+                
+               
+
+
+
+
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+
+            <div class="socials">
+                <p>Follow us on social media:</p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 NSP MOVIE WEB | Designed by NSP Web Team
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
